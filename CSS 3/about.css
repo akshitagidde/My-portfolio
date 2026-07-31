@@ -1,0 +1,59 @@
+/* ============================================
+   about.css
+   ============================================ */
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 720px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__text p {
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+.about__text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about__meta {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  align-self: start;
+}
+
+.about__meta-title {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.about__meta dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.6rem 1rem;
+  font-size: 0.92rem;
+}
+
+.about__meta dt {
+  color: var(--text-faint);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+}
+
+.about__meta dd {
+  color: var(--text);
+}

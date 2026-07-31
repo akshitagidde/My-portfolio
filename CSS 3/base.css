@@ -1,0 +1,169 @@
+/* ============================================
+   base.css — design tokens, reset, shared utilities
+   ============================================ */
+
+:root {
+  /* Color */
+  --bg: #0f1117;
+  --bg-raised: #171a23;
+  --bg-inset: #0b0d12;
+  --line: #262b38;
+  --text: #e4e6eb;
+  --text-dim: #9aa1b1;
+  --text-faint: #5b6272;
+  --accent: #7dd3c0;      /* mint — links, active states */
+  --accent-2: #f2b872;    /* amber — highlights, hover */
+  --accent-3: #e58b8b;    /* soft red — tab "unsaved dot", tags */
+
+  /* Type */
+  --font-display: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --radius: 6px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --content-width: 920px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+body::before {
+  /* faint scanline / grid texture so the dark bg isn't flat */
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding: 4.5rem var(--gutter);
+  max-width: var(--content-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* File-tab style eyebrow used at the top of every section,
+   echoing the nav's "open files" metaphor */
+.file-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.1rem;
+}
+
+.file-tag::before {
+  content: "//";
+  color: var(--accent-2);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+  color: var(--text);
+}
+
+.section-title .dim {
+  color: var(--text-faint);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg-inset);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  color: var(--bg-inset);
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+}
