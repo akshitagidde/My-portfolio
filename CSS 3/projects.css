@@ -68,3 +68,33 @@
   font-family: var(--font-display);
   font-size: 0.82rem;
 }
+
+.project-card__details {
+  margin: 1rem 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg-inset);
+}
+
+.project-card__details summary {
+  padding: 0.65rem 0.8rem;
+  cursor: pointer;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+}
+
+.project-card__details summary:hover { color: var(--accent-2); }
+
+.project-card__detail-content {
+  padding: 0 0.8rem 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.project-card__detail-content p {
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  max-width: 68ch;
+}
+
+.project-card__detail-content strong { color: var(--text); }
