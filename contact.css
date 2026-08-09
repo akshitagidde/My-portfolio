@@ -1,0 +1,76 @@
+/* ============================================
+   contact.css
+   ============================================ */
+
+.contact__panel {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem 2.2rem;
+}
+
+.contact__intro {
+  color: var(--text-dim);
+  max-width: 56ch;
+  margin-bottom: 1.8rem;
+}
+
+.contact__form {
+  display: grid;
+  gap: 1.1rem;
+  max-width: 480px;
+}
+
+.field label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-bottom: 0.45rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  background: var(--bg-inset);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.85rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* Chrome/Edge/Safari force a light background on autofilled fields —
+   this overrides that so the input stays dark even after autofill. */
+.field input:-webkit-autofill,
+.field input:-webkit-autofill:hover,
+.field input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-inset) inset;
+  -webkit-text-fill-color: var(--text);
+  caret-color: var(--text);
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.contact__status {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  color: var(--accent);
+  min-height: 1.2em;
+}
+
+.contact__links {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
