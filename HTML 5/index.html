@@ -1,258 +1,267 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akshita — Computer Engineering Portfolio</title>
-<meta name="description" content="Portfolio of Akshita, Computer Engineering student and AI Web Developer.">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-
-<!-- One stylesheet per section, plus a shared base -->
-<link rel="stylesheet" href="../CSS%203/base.css">
-<link rel="stylesheet" href="../CSS%203/header.css">
-<link rel="stylesheet" href="../CSS%203/about.css">
-<link rel="stylesheet" href="../CSS%203/skills.css">
-<link rel="stylesheet" href="../CSS%203/projects.css">
-<link rel="stylesheet" href="../CSS%203/contact.css">
-<link rel="stylesheet" href="../CSS%203/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshita — Computer Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Akshita, Computer Engineering student and AI Web Developer building practical, beautiful digital products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS%203/base.css">
+  <link rel="stylesheet" href="../CSS%203/animations.css">
+  <link rel="stylesheet" href="../CSS%203/header.css">
+  <link rel="stylesheet" href="../CSS%203/about.css">
+  <link rel="stylesheet" href="../CSS%203/skills.css">
+  <link rel="stylesheet" href="../CSS%203/projects.css">
+  <link rel="stylesheet" href="../CSS%203/experience.css">
+  <link rel="stylesheet" href="../CSS%203/contact.css">
+  <link rel="stylesheet" href="../CSS%203/footer.css">
 </head>
 <body>
 
-<!-- ============ HEADER / NAV ============ -->
-<header>
-  <nav class="tabbar" aria-label="Section navigation">
-    <div class="tabbar__brand">
-      <span class="tabbar__brand-dot" aria-hidden="true"></span>
-      About me
+  <!-- Navigation -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">akshita<span>.dev</span></a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
     </div>
-    <ul class="tabbar__tabs">
-      <li><a href="#about" class="is-active">about</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
   </nav>
 
-  <div class="hero">
-    <p class="hero__path"><span class="accent">~/portfolio</span> $ whoami</p>
-    <h1 class="hero__title">Akshita<span class="cursor">&nbsp;</span></h1>
-    <p class="hero__role">Computer Engineering Student &amp; AI Web Developer</p>
-    <p class="hero__desc">
-       
-    </p>
-    <div class="hero__actions">
-      <a href="#projects" class="btn btn-primary">View projects</a>
-      <a href="#contact" class="btn">Get in touch</a>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__particles" aria-hidden="true">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
     </div>
-  </div>
-</header>
-
-<main>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about">
-    <p class="file-tag">about</p>
-    <h2 class="section-title">About <span class="dim">me</span></h2>
-    <div class="about__grid">
-      <div class="about__text">
-        <p>
-       
-
-I’m a Computer Science engineering student with a strong interest in technology, problem-solving, and continuous learning. I enjoy understanding how things work, building practical solutions, and exploring new areas of computer science.
-
-As an engineering student, I’m developing my skills in programming, software development, and core computer science concepts while gaining experience through academic projects and hands-on learning. I’m curious, adaptable, and always willing to learn from new challenges.
-
-I believe that good technology comes from a combination of logical thinking, creativity, and consistent improvement. My goal is to keep growing as a developer, work on meaningful projects, and build solutions that are both useful and impactful.
-
-        </p>
-        <p>
-          Alongside my coursework, I work as an <strong>AI Web Developer</strong>
-          at Inamigos Foundation, and I've spent time exploring startup ideas
-          across fintech and education technology, with a bias toward
-          grounded, monetizable products over technically flashy ones.
-          I've also Complited my certification at <strong>Microsoft Azure AI Fundamentals.</strong>
-        </p>
-      </div>
-      <aside class="about__meta">
-        <p class="about__meta-title">// quick facts</p>
-        <dl>
-          <dt>Based in</dt><dd>Mumbai, India</dd>
-          <dt>Studying</dt><dd>Computer Engineering, VPPCOE</dd>
-          <dt>Scheme</dt><dd>Mumbai University</dd>
-          <dt>Worked as</dt><dd>AI Web Developer @ Inamigos Foundation</dd>
-          <dt>Focus</dt><dd>Fintech, EdTech, AIML</dd>
-        </dl>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section id="skills">
-    <p class="file-tag">skills</p>
-    <h2 class="section-title">Skills &amp; <span class="dim">tools</span></h2>
-    <div class="skills__groups">
-      <div class="skill-card">
-        <p class="skill-card__label">Languages</p>
-        <ul class="skill-card__list">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>C</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <p class="skill-card__label">Web Development</p>
-        <ul class="skill-card__list">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>React</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <p class="skill-card__label">Data &amp; Tools</p>
-        <ul class="skill-card__list">
-          <li>Git &amp; GitHub</li>
-          <li>MySQL</li>
-          <li>Vercel</li>
-          <li>REST APIs</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <p class="skill-card__label">Currently learning</p>
-        <ul class="skill-card__list">
-          <li>Data Structures &amp; Algorithms</li>
-          <li>System design basics</li>
-        </ul>
+    <div class="hero__content">
+      <p class="hero__greeting animate-on-scroll">Hi there, I'm</p>
+      <h1 class="hero__title animate-on-scroll">Akshita<span class="hero__title-dot">.</span></h1>
+      <p class="hero__subtitle animate-on-scroll">Computer Engineering Student &amp; AI Web Developer<br>crafting clean, practical digital experiences.</p>
+      <div class="hero__actions animate-on-scroll">
+        <a href="#projects" class="btn btn--primary">Discover My Work</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROJECTS ============ -->
-  <section id="projects">
-    <p class="file-tag">projects</p>
-    <h2 class="section-title">Selected <span class="dim">projects</span></h2>
-    <div class="projects__list">
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section__title animate-on-scroll">About Me</h2>
+      <div class="section__divider animate-on-scroll"></div>
+      <div class="about__cards">
+        <div class="about__card animate-on-scroll">
+          <span class="about__card-icon">🌸</span>
+          <h3 class="about__card-title">Who I Am</h3>
+          <p>A third-year Computer Engineering student at VPPCOE, Mumbai. I enjoy building things with a clear, practical shape — the kind you can scope, build, and actually put in front of users.</p>
+        </div>
+        <div class="about__card animate-on-scroll">
+          <span class="about__card-icon">💡</span>
+          <h3 class="about__card-title">What I Love</h3>
+          <p>Crafting clean, grounded solutions that marry form with function. My inspiration blooms from nature's elegance and the endless world of creative design.</p>
+        </div>
+        <div class="about__card animate-on-scroll">
+          <span class="about__card-icon">✨</span>
+          <h3 class="about__card-title">My Focus</h3>
+          <p>AI &amp; web development, startup ideation, and building monetizable products. Currently working as an AI Web Developer at Inamigos Foundation. Microsoft Azure AI certified.</p>
+        </div>
+      </div>
+    </section>
 
-      <article class="project-card">
-        <div class="project-card__head">
-          <span class="project-card__name">Paybond</span>
-          <div class="project-card__tags">
-            <span>Fintech</span>
-            <span>Lending</span>
-          </div>
-        </div>
-        <div class="project-card__body">
-          <p>
-            A fintech lending application designed around a clear, grounded
-            problem: making lending workflows simpler and more transparent
-            for users. Built with a focus on practical usability over
-            unnecessary complexity.
-          </p>
-          <div class="project-card__links">
-            <a href="#">Case study →</a>
-            <a href="#">Live demo →</a>
-          </div>
-        </div>
-      </article>
-<article class="project-card">
-  <div class="project-card__head">
-    <span class="project-card__name">GroupSync</span>
-    <div class="project-card__tags">
-      <span>EdTech</span>
-      <span>Automation</span>
-    </div>
-  </div>
-  <div class="project-card__body">
-    <p>
-      An automated student group formation platform that removes the
-      manual back-and-forth of putting project teams together. Built
-      with Supabase and deployed on Vercel.
-    </p>
-    <div class="project-card__links">
-        <a href="https://github.com/jaydavane207-cyber/Mini-Project-Sem4.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://mini-project-sem4-supabase.vercel.app/" target="_blank" rel="noopener noreferrer">Live site →</a>
-    </div>
-  </div>
-</article>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section__title animate-on-scroll">Skills</h2>
+      <div class="section__divider animate-on-scroll"></div>
+      <p class="skills__intro animate-on-scroll">My toolkit for crafting calm, thoughtful, and beautifully detailed digital experiences.</p>
+      <div class="skills__tags animate-on-scroll">
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> HTML5</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> CSS3</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> JavaScript</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> React</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Node.js</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Python</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Java</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> C</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> TypeScript</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Git</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> MySQL</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Vercel</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> REST APIs</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Supabase</span>
+        <span class="skill-tag"><span class="skill-tag__icon">◆</span> Figma</span>
+      </div>
+    </section>
 
-      <article class="project-card">
-        <div class="project-card__head">
-          <span class="project-card__name">Flappy Bird Game</span>
-          <div class="project-card__tags">
-            <span>Java</span>
-            <span>Swing</span>
-            <span>Game Dev</span>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section__title animate-on-scroll">Projects</h2>
+      <div class="section__divider animate-on-scroll"></div>
+      <div class="projects__grid">
+        <article class="project-card animate-on-scroll">
+          <span class="project-card__icon">🌿</span>
+          <h3 class="project-card__title">GroupSync</h3>
+          <p class="project-card__desc">A student group-formation platform that cuts down the manual back-and-forth of organising project teams. Designed the group creation flow from scratch.</p>
+          <div class="project-card__tech">
+            <span>Supabase</span><span>Vercel</span><span>JavaScript</span>
+          </div>
+          <a href="https://mini-project-sem4-supabase.vercel.app/" class="project-card__link" target="_blank" rel="noopener noreferrer">Explore →</a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <span class="project-card__icon">💰</span>
+          <h3 class="project-card__title">Paybond</h3>
+          <p class="project-card__desc">A fintech lending application designed around a clear, grounded problem: making lending workflows simpler and more transparent for users.</p>
+          <div class="project-card__tech">
+            <span>Fintech</span><span>Lending</span><span>React</span>
+          </div>
+          <a href="#" class="project-card__link">Case Study →</a>
+        </article>
+        <article class="project-card animate-on-scroll">
+          <span class="project-card__icon">🎮</span>
+          <h3 class="project-card__title">Flappy Bird Game</h3>
+          <p class="project-card__desc">A Java-based arcade game with gravity physics, pipe obstacles, collision detection, and live score tracking.</p>
+          <div class="project-card__tech">
+            <span>Java</span><span>Swing</span><span>Game Dev</span>
+          </div>
+          <a href="https://github.com/akshitagidde/Flappy-Bird-Game-using-java" class="project-card__link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </article>
+      </div>
+      <div class="projects__more animate-on-scroll">
+        <a href="projects.html" class="btn btn--outline">View All Projects →</a>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section__title animate-on-scroll">Experience</h2>
+      <div class="section__divider animate-on-scroll"></div>
+      <div class="timeline">
+        <div class="timeline__item animate-on-scroll">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__icon">💼</span>
+            <span class="timeline__date">2024 — Present</span>
+            <h3 class="timeline__role">AI Web Developer</h3>
+            <p class="timeline__company">Inamigos Foundation</p>
+            <ul class="timeline__details">
+              <li>Created interactive websites using HTML, CSS, and JavaScript</li>
+              <li>Integrated AI-driven features into web platforms</li>
+              <li>Built responsive and accessible UI components</li>
+            </ul>
           </div>
         </div>
-        <div class="project-card__body">
-          <p>
-            A Java-based arcade game inspired by Flappy Bird, built to recreate
-            the classic gameplay loop with gravity, obstacle collision checks,
-            and live score tracking. It was a practical way to strengthen my
-            understanding of game logic and event-driven programming.
-          </p>
-          <details class="project-card__details">
-            <summary>Open project details</summary>
-            <div class="project-card__detail-content">
-              <p><strong>What I built:</strong> A complete side-scrolling game with bird movement, pipe obstacles, point counting, and a restart flow after collision.</p>
-              <p><strong>What I used:</strong> Java Swing for rendering, keyboard input, and the interactive game loop.</p>
-              <p><strong>What I learned:</strong> How to think in frames, handle collisions carefully, and design gameplay that feels responsive and smooth.</p>
+        <div class="timeline__item animate-on-scroll">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__icon">🎓</span>
+            <span class="timeline__date">2023 — Present</span>
+            <h3 class="timeline__role">Computer Engineering Student</h3>
+            <p class="timeline__company">VPPCOE, Mumbai University (NEP 2020)</p>
+            <ul class="timeline__details">
+              <li>Pursuing B.E. in Computer Engineering</li>
+              <li>Microsoft Azure AI Fundamentals certified</li>
+              <li>Exploring fintech, edtech, and AIML domains</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline__item animate-on-scroll">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__icon">🚀</span>
+            <span class="timeline__date">Ongoing</span>
+            <h3 class="timeline__role">Personal Projects &amp; Learning</h3>
+            <p class="timeline__company">Self-directed</p>
+            <ul class="timeline__details">
+              <li>Designed and shipped multiple web applications</li>
+              <li>Explored startup ideation across fintech and edtech</li>
+              <li>Learning DSA, system design, and modern frameworks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section__title animate-on-scroll">Let's Connect</h2>
+      <div class="section__divider animate-on-scroll"></div>
+      <div class="contact__wrapper animate-on-scroll">
+        <div class="contact__info">
+          <p class="contact__tagline">Have a project in mind or just want to say hello? I'd love to hear from you. ✨</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__detail-icon">📧</span>
+              <a href="mailto:akshitagidde9@gmail.com">akshitagidde9@gmail.com</a>
             </div>
-          </details>
-          <div class="project-card__links">
-            <a href="https://github.com/akshitagidde/Flappy-Bird-Game-using-java-" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+            <div class="contact__detail">
+              <span class="contact__detail-icon">📍</span>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="https://github.com/akshitagidde" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/akshita-gidde-96129b32b/" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:akshitagidde9@gmail.com" class="contact__social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            </a>
           </div>
         </div>
-      </article>
-  <!-- ============ CONTACT ============ -->
-  <section id="contact">
-    <p class="file-tag">contact</p>
-    <h2 class="section-title">Get in <span class="dim">touch</span></h2>
-    <div class="contact__panel">
-      <p class="contact__intro">
-        Open to internships, freelance web development work, and
-        conversations about practical, monetizable product ideas.
-      </p>
-      <form class="contact__form" id="contact-form">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p class="contact__status" id="contact-status" role="status" aria-live="polite"></p>
-      </form>
-      <div class="contact__links">
-  <a href="akshitagidde9@gmail.com">email</a>
-  <a href="https://github.com/akshitagidde" target="_blank" rel="noopener noreferrer">github</a>
-  <a href="https://www.linkedin.com/in/akshita-gidde-96129b32b/" target="_blank" rel="noopener noreferrer">linkedin</a>
-</div>
+        <form class="contact__form" id="contact-form">
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Akshita" required>
+          </div>
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message ✨</button>
+          <p class="contact__status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__socials">
+        <a href="https://github.com/akshitagidde" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/akshita-gidde-96129b32b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:akshitagidde9@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">Built with 💜 by Akshita · © 2026</p>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <span class="site-footer__status">
-    <span class="site-footer__status-dot" aria-hidden="true"></span>
-    Available for work
-  </span>
-  <span>&copy; 2026 Akshita. Built with HTML5 &amp; CSS3.</span>
-</footer>
-
-<script src="../JS/script.js"></script>
+  <script src="../JS/script.js"></script>
 </body>
 </html>
