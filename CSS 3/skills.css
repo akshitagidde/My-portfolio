@@ -1,46 +1,48 @@
-/* ============================================
-   skills.css
-   ============================================ */
+/* skills.css — skill badge chips */
 
-.skills__groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.4rem;
+.skills__intro {
+  text-align: center;
+  color: var(--text-dim);
+  max-width: 600px;
+  margin: -1rem auto 2.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-.skill-card {
-  background: var(--bg-raised);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.3rem 1.4rem;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-
-.skill-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.skill-card__label {
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  color: var(--accent-2);
-  margin-bottom: 0.8rem;
-  letter-spacing: 0.03em;
-}
-
-.skill-card__list {
-  list-style: none;
+.skills__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.skill-card__list li {
-  font-size: 0.85rem;
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--text-dim);
-  background: var(--bg-inset);
+  background: var(--bg-raised);
   border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  padding: 0.55rem 1.2rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(232, 160, 191, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(232, 160, 191, 0.1);
+}
+
+.skill-tag__icon {
+  color: var(--accent);
+  font-size: 0.6rem;
 }
